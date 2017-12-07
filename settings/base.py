@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/1.11/how to/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 def get_env_variable(var_name):
@@ -28,10 +28,7 @@ def get_env_variable(var_name):
         error_msg = "Set the %s environment variable" % var_name
         raise ImproperlyConfigured(error_msg)
 
-
 SECRET_KEY = get_env_variable('SECRET_KEY')
-
-SECRET_KEY = 'ihr!d7dgpaczk_5fzs%rloo*sjn1d4np5ux02*1i3*#j3601gc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -48,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +127,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/how to/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
