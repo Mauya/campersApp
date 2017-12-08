@@ -1,8 +1,5 @@
-requirements 
 Django==1.11.7
-django-debug-toolbar==1.9.1
 olefile==0.44
 Pillow==4.3.0
 pytz==2017.3
 selenium==3.8.0
-sqlparse==0.2.4
