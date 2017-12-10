@@ -13,3 +13,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# django-paypal environments
+PAYPAL_RECEIVER_EMAIL = 'smkadungure@live.co.uk'
+PAYPAL_TEST = True
