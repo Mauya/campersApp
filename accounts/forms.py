@@ -30,3 +30,12 @@ class ProfileEditForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ('organisation', 'phone')
+
+class ContactForm(forms.Form):
+    contact_name = forms.CharField(required=True)
+    contact_email = forms.EmailField(required=True)
+    subject = forms.CharField(required=True)
+    message = forms.CharField(
+        required=True,
+        widget=forms.Textarea
+    )

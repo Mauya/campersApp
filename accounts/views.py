@@ -10,12 +10,10 @@ from .forms import (
     LoginForm,
     UserRegistrationForm,
     UserEditForm,
-    ProfileEditForm
+    ProfileEditForm,
+    ContactForm
 )
 from .models import Profile
-
-def home(request):
-    return render(request, 'home.html')
 
 def user_login(request):
     if request.method == 'POST':
@@ -78,3 +76,10 @@ def edit(request):
 @login_required
 def dashboard(request):
     return render(request, 'dashboard.html', {'section': 'dashboard'})
+
+def contact(request):
+    form_class = ContactForm
+
+    return render(request, 'contact.html', {
+        'form': form_class,
+    })
