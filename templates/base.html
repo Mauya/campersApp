@@ -36,21 +36,21 @@
                 </button>
                 <!--Below is the top-left hand side of the screen where you usually see a company/project name and a logo-->
                 <!--The next line sends the user back to the home page-->
-                <a class="navbar-brand" href="#">CampOasis</a>
+                <a id="logo" class="navbar-brand" href="/">CampOasis</a>
             </div>
 
             <div id= "navbar" class="navbar-collapse collapse">
-                {% if user_is_authenticated %}
                 <ul class="nav navbar-nav pull-left">
                    <li><a href="{% url 'home' %}">Home</a></li>
-                   <li><a href="{% url '' %}">Booking</a></li>
-                   <li><a href="{% url 'shop:shop' %}">Shop</a></li>
-                   <li><a href="#">Contact</a></li>
+                   <li><a href="{% url 'booking' %}">Booking</a></li>
+                   <li><a href="{% url 'shop' %}">Shop</a></li>
+                   <li><a href="{% url 'contact' %}">Contact</a></li>
+                    {% if user.is_authenticated %}
                     <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
                      <li><a href="{% url 'accounts:view_profile' %}">Profile</a></li>
                     <li><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></li>
                 </ul>
-                {% else %}
+                    {% else %}
                 <ul class = "nav navbar-nav pull-right">
                    <li><a href="{% url 'accounts:register' %}">Register</a></li>
                    <li><a href="{% url 'accounts:login' %}">Log In</a></li>

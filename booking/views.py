@@ -18,7 +18,7 @@ def booking_form(request):
     context = {
         "form": form,
     }
-    return render(request, 'booking/booking_form.html', context)
+    return render(request, 'booking/form.html', context)
 
 def booking_detail(request, id=id):
     instance = get_object_or_404(booking_form)
@@ -34,11 +34,11 @@ def booking_list(request):
         "object_list": queryset,
         "title": "List"
     }
-    return render(request, 'booking/booking_list.html', context)
+    return render(request, 'booking/list.html', context)
 
 def booking_edit(request, id=None):
     instance = get_object_or_404(Booking, id=id)
-    form = BookingForm(request.POST or None, Instance=instance)
+    form = BookingForm(request.POST or None)
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
@@ -46,7 +46,7 @@ def booking_edit(request, id=None):
         return redirect(instance.get_absolute_url())
 
     context = {
-        "title": instance.title,
+        "id": instance.id,
         "instance": instance,
         "form": form,
     }
