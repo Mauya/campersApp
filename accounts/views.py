@@ -14,6 +14,9 @@ from .forms import (
 )
 from .models import Profile
 
+def home(request):
+    return render(request, 'home.html')
+
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -46,11 +49,11 @@ def register(request):
             # Create the user profile
             profile = Profile.objects.create(user=request.user)
             return render(request,
-                          'account/register_done.html',
+                          'register_done.html',
                           {'new_user': new_user})
     else:
         user_form = UserRegistrationForm()
-    return render(request, 'account/register.html', {'user_form': user_form})
+    return render(request, 'register.html', {'user_form': user_form})
 
 @login_required
 def edit(request):
@@ -69,9 +72,9 @@ def edit(request):
     else:
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
-    return render(request, 'account/edit.html', {'user_form': user_form,
+    return render(request, 'edit.html', {'user_form': user_form,
                                                  'profile_form': profile_form})
 
 @login_required
 def dashboard(request):
-    return render(request, 'account/dashboard.html', {'section': 'dashboard'})
+    return render(request, 'dashboard.html', {'section': 'dashboard'})
