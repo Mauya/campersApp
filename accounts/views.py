@@ -79,6 +79,6 @@ def dashboard(request):
 def contact(request):
     form_class = ContactForm
 
-    return render(request, 'contact.html', {
+    return render(request, 'accounts/contact.html', {
         'form': form_class,
     })

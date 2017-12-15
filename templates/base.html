@@ -41,8 +41,8 @@
 
             <div id= "navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-left">
-                   <li><a href="{% url 'home' %}">Home</a></li>
-                   <li><a href="{% url 'shop:shop' %}">Shop</a></li>
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/shop/">Shop</a></li>
                    <li><a href="{% url 'contact' %}">Contact</a></li>
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
@@ -51,7 +51,7 @@
                 </ul>
                     {% else %}
                 <ul class = "nav navbar-nav pull-right">
-                    <li><a href="{% url 'booking:booking' %}">Booking</a></li>
+                    <li><a  href="{% url 'booking:booking' %}" class="btn btn-lg m_t_10">BOOKING</a></li>
                    <li><a href="{% url 'accounts:register' %}">Register</a></li>
                    <li><a href="{% url 'accounts:login' %}">Log In</a></li>
                 </ul>
