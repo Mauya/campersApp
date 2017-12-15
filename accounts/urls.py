@@ -35,5 +35,5 @@ urlpatterns = [
     url(r'^password-reset/complete/$', password_reset_complete, name='password_reset_complete'),
 
     # contact form url
-    url(r'^contact/$', views.contact, name='contact')
+    url(r'^contact/$', views.contact, name='contact'),
 ]
