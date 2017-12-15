@@ -20,18 +20,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^$', views.index, name='home'),
+    url(r'^$', views.index),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('accounts.urls')),
-    url(r'^booking/', include('booking.urls', namespace='booking')),
-    url(r'^shop/', include('shop.urls', namespace='shop')),
-    url(r'^cart/', include('cart.urls', namespace='cart')),
-    url(r'^orders/', include('orders.urls', namespace='orders')),
+    url(r'^booking/', include('booking.urls')),
+    url(r'^shop/', include('shop.urls')),
+    url(r'^cart/', include('cart.urls')),
+    url(r'^orders/', include('orders.urls')),
     url(r'^paypal/', include('paypal.standard.ipn.urls')),
-    url(r'^payment/', include('payment.urls', namespace='payment')),
+    url(r'^payment/', include('payment.urls')),
 
 ]
-
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns.append(url(r'^debug/', include(debug_toolbar.urls)))

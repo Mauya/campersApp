@@ -42,20 +42,20 @@
             <div id= "navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-left">
                    <li><a href="/">Home</a></li>
-                   <li><a href="/shop/">Shop</a></li>
-                   <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="/shop/">Shop</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
                     {% if user.is_authenticated %}
-                    <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
-                     <li><a href="{% url 'accounts:view_profile' %}">Profile</a></li>
-                    <li><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></li>
+                    <li><a  href="/booking/" class="btn btn-sm btn-info btn-outline">BOOKING</a></li>
+                    <li><a href="{% url 'logout' %}">Log Out</a></li>
                 </ul>
                     {% else %}
                 <ul class = "nav navbar-nav pull-right">
-                    <li><a  href="{% url 'booking:booking' %}" class="btn btn-lg m_t_10">BOOKING</a></li>
-                   <li><a href="{% url 'accounts:register' %}">Register</a></li>
-                   <li><a href="{% url 'accounts:login' %}">Log In</a></li>
+                   <li><a href="{% url 'register' %}">Register</a></li>
+                   <li><a href="{% url 'login' %}">Log In</a></li>
                 </ul>
-                {% endif %}
+                    {% endif %}
             </div>
         </nav>
 
