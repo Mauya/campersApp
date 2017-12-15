@@ -68,7 +68,7 @@ with others and also makes it easy when deploying
 
 * for more in-depth settings refer to Django documentation
 
-### Adding Apps
+#### Adding Apps
 * apps can be added or removed from the project
     ``` python manage.py startapp accounts```
 
@@ -83,14 +83,14 @@ with others and also makes it easy when deploying
     - always add work to github some files and database sqlite3 are included in gitignore (or any version of your choice)
     - Runserver to check that your code is running ok ``` python manage.py runserver```
 
-### Adding Static Files
+#### Adding Static Files
 * the first thing is to check base.py in the INSTALLED_APP to see if ```django.contrib.staticfiles``` is include.
 also include the STATIC_URL
 * static files for this project include one project static folder which include
     - css
     - img
 
-### Templates
+#### Templates
 * project comes with a templates folder. This contains all templates categorised by the original app.
 * Ensure to update base.py and edit the TEMPLATES section as required
 * the templates folder contain base.html as the main file from which other html files inherit the main outline.
@@ -106,6 +106,17 @@ so I resorted  to ```name```  as in the LMS tutorials.
 * some of the bug or errors were due to importErrors from either forms, models or views.
 * In some cases it was improper import of modules in the settings.
 * The vast majority and easy one were ```TypeErrors```
+
+#### Examples of Errors encountered
+    - AttributeError at /accounts/ 'module' object has no attribute 'index' - I eventual created home app and created a
+     view for the home page.
+    - raise NoReverseMatch(% "accounts is not a registered namespace" % key) NoReverseMatch:
+    'accounts' is not a registered namespace - removed the use of namespace
+    - Push rejected, failed to compile Python app. !     Push failed - solved by removing unnecessary quotes
+    there for `-r base.html`
+    - sqlite3.OperationalError: no such column: booking: gender. Run makemigrations after changes in
+    the booking form fields and the run migrate.
+
 
 ### Acknowledgements
 * Mentor Yoni Lavi for helpful tips on debugging and structuring of the project
