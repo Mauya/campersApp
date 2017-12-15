@@ -1,9 +1,12 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+{% load static %}
+
 {% block content %}
-    <div id="shop-header">
-        <a href="/" class="logo">Camping Gear for Hire</a>
+<div id="header">
+        <h2 class="logo">CampOasis Shop</h2>
+            <p>Camping Equipment for hire ONLY</p>
     </div>
-    <div id="sub-header">
+    <div id="subheader">
         <div class="cart">
             {% with total_items=cart|length %}
                 {% if cart|length > 0 %}

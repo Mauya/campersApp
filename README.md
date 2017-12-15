@@ -114,8 +114,13 @@ so I resorted  to ```name```  as in the LMS tutorials.
     'accounts' is not a registered namespace - removed the use of namespace
     - Push rejected, failed to compile Python app. !     Push failed - solved by removing unnecessary quotes
     there for `-r base.html`
-    - sqlite3.OperationalError: no such column: booking: gender. Run makemigrations after changes in
+    - sqlite3.OperationalError: no such column: booking: gender - Run makemigrations after changes in
     the booking form fields and the run migrate.
+    - AttributeError: 'UserProfile' object has no attribute 'creation_counter' - deleting migration file and
+    then recreating it solved this issue ie delete ```accounts/migrations/0001_initial.py``` and run ```python manage.py
+    makemigrations```
+    - MultipleObjectsReturned at /account/login/ - get() returned more than one User -- it returned 2! - could
+    not solve the issue and had to restart project and made sure that the username would be unique.
 
 
 ### Acknowledgements

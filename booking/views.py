@@ -28,7 +28,7 @@ def booking_detail(request):
         "title": instance.title,
         "instance": instance,
     }
-    return render(request, booking_detail, context)
+    return render(request, 'booking/detail.html', context)
 
 def booking_list(request):
     queryset = Booking.objects.all()
