@@ -1,18 +1,20 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import BookingForm
 from django.contrib import messages
 from .models import Booking
+from django.core.urlresolvers import reverse
 
-def booking_form(request):
+def booking_create(request):
     form = BookingForm(request.POST or None)
     if form.is_valid():
         instance = form.save(commit=False)
         instance.user = request.user
         instance.save()
         messages.success(request, "successfully created")
-        return redirect(instance.get_absolute_url())
+        return reverse(request, 'booking/detail.html', instance.get_absolute_url())
     else:
         messages.error(request, "Not Successfully Created")
     context = {
@@ -21,7 +23,7 @@ def booking_form(request):
     return render(request, 'booking/form.html', context)
 
 def booking_detail(request, id=id):
-    instance = get_object_or_404(booking_form)
+    instance = get_object_or_404(booking_create)
     context = {
         "title": instance.title,
         "instance": instance,
