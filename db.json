@@ -1,0 +1,1076 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$97hZaUCIZgaw$XyUz2t+ZjsxkFAooW35VCqnMgqnZpbFMVMdDOHhaJnY=",
+        "last_login": "2017-12-13T00:36:14.888Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "smkadungure@live.co.uk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-12-06T23:30:39.141Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$EJg6Y8PxHaPh$O6Fy3JCPCZUp3+nxnlDUWZENoZ2UKbT7OGQC0HDDCJE=",
+        "last_login": "2017-12-15T20:55:01.812Z",
+        "is_superuser": true,
+        "username": "user",
+        "first_name": "",
+        "last_name": "",
+        "email": "smkadungure@yahoo.co.uk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-12-12T23:34:49.958Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "chgroxtk109uy7t5aqpxv8v9564ppb9g",
+    "fields": {
+        "session_data": "YzljMmIyNjMzMmY5YjgzZjk3NzU2OWIxZTZkYTA5MWZiZGJkYjc2Njp7ImNhcnQiOnt9LCJfYXV0aF91c2VyX2hhc2giOiI0MTMzNDNhYzMzZDhkNzBiZGQ3YTYxZTgyZTY2OGZkMGI3YWNlNGI2IiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCJ9",
+        "expire_date": "2017-12-29T20:58:23.140Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wjcvc935ep7798aol3lafpmik32jox0r",
+    "fields": {
+        "session_data": "Yzc1ZTYxODAwYmJlOTE3MmVjNWI1M2JjMWU0N2UyYWU1ODFkMDcyYTp7ImNhcnQiOnt9LCJfYXV0aF91c2VyX2hhc2giOiIwMTNlOTA3NjhmYTRhYjM1NDI4MzNjZWE3MTY5YjY0MDhmZjliOWIyIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCJ9",
+        "expire_date": "2017-12-26T20:19:54.580Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+        "name": "Tents",
+        "slug": "tents"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 6,
+    "fields": {
+        "name": "Sleeping bags",
+        "slug": "sleeping-bags"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+        "name": "Sleeping Mats",
+        "slug": "sleeping-mats"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 8,
+    "fields": {
+        "name": "Kitchen",
+        "slug": "kitchen"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+        "category": 5,
+        "name": "4 Meter deluxe Bell tents",
+        "slug": "4-meter-deluxe-bell-tents",
+        "image": "products/2017/12/10/Bell_tent.jpg",
+        "description": "Bell tents are easy to set up, spacious and strong. This can fit up 4 people depending on other luggage.",
+        "price": "169.99",
+        "stock": 22,
+        "available": true,
+        "created": "2017-12-10T09:15:06.560Z",
+        "updated": "2017-12-10T09:15:06.560Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+        "category": 5,
+        "name": "Open Dome",
+        "slug": "open-dome",
+        "image": "products/2017/12/10/dome_tent1_4Nz0ikq.jpg",
+        "description": "This is great for group camping, spacious and standing space. This type can fit 8-10 teens. It is easy to maintain.",
+        "price": "139.99",
+        "stock": 17,
+        "available": true,
+        "created": "2017-12-10T09:25:23.256Z",
+        "updated": "2017-12-10T09:25:23.256Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+        "category": 5,
+        "name": "Trailhead dome_tent",
+        "slug": "trailhead-dome_tent",
+        "image": "products/2017/12/10/dome_tent3_eCO4l99.jpg",
+        "description": "3-4 person tent. Great for group leaders. Has a baggage area living more space for sleeping and relaxing.",
+        "price": "69.99",
+        "stock": 25,
+        "available": true,
+        "created": "2017-12-10T09:29:17.979Z",
+        "updated": "2017-12-10T09:29:17.979Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+        "category": 5,
+        "name": "pyramids_tents",
+        "slug": "pyramids_tents",
+        "image": "products/2017/12/10/pyramid1.jpg",
+        "description": "They have been in use for over a century. Has a large spacious base and requires all corners to be strong to hold steady",
+        "price": "55.00",
+        "stock": 9,
+        "available": true,
+        "created": "2017-12-10T09:35:09.213Z",
+        "updated": "2017-12-10T09:35:09.213Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 8,
+    "fields": {
+        "category": 5,
+        "name": "Heavy duty Pyramid tent",
+        "slug": "heavy-duty-pyramid-tent",
+        "image": "products/2017/12/10/pyramid2.jpg",
+        "description": "Slightly different from the bell tent in that they have a pole in the middle. The tent material is spread out around the pole tightly to form a pyramid. Great for group camping, more base space around the pole.",
+        "price": "159.99",
+        "stock": 11,
+        "available": true,
+        "created": "2017-12-10T09:42:49.091Z",
+        "updated": "2017-12-10T09:42:49.091Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 9,
+    "fields": {
+        "category": 5,
+        "name": "Classic ridge tent",
+        "slug": "classic-ridge-tent",
+        "image": "products/2017/12/10/ridge1.jpg",
+        "description": "Popularised by scouts groups and comes with steel pegs, pole set and the canvas. Pitching the tent requires following certain process. If your group is out to learn how to pitch a tent, this is a great pick.",
+        "price": "89.99",
+        "stock": 3,
+        "available": true,
+        "created": "2017-12-10T09:49:56.424Z",
+        "updated": "2017-12-10T09:49:56.424Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 10,
+    "fields": {
+        "category": 5,
+        "name": "Force ten ridge tent",
+        "slug": "force-ten-ridge-tent",
+        "image": "products/2017/12/10/ridge2.jpg",
+        "description": "3 person tent. It is easy to erect yet durable and tough . Great in all kinds of weather. It has a lot of standing space along the ridge. Very popular with youth group and expeditions.",
+        "price": "149.99",
+        "stock": 15,
+        "available": true,
+        "created": "2017-12-10T09:56:36.137Z",
+        "updated": "2017-12-10T09:56:36.137Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 11,
+    "fields": {
+        "category": 6,
+        "name": "rectangular sleeping bags",
+        "slug": "rectangular-sleeping-bags",
+        "image": "products/2017/12/10/rectangular.jpg",
+        "description": "Most popular with campers. It is wider at the shoulders and get narrower around the feet to ensure warm in the night. allows lots of movements during sleep. It is also easy to clean and roll up. Big advantage it has a zipper on the sides hence easy to open and close.",
+        "price": "15.99",
+        "stock": 25,
+        "available": true,
+        "created": "2017-12-10T11:51:44.486Z",
+        "updated": "2017-12-10T11:51:44.486Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 12,
+    "fields": {
+        "category": 6,
+        "name": "Mummy Sleeping Bag",
+        "slug": "mummy-sleeping-bag",
+        "image": "products/2017/12/10/mummy.jpg",
+        "description": "Shape is tampered around the body. Popular with winter camping. It hugs the body and there is less movement. No heat loss as it is fully insulated with an adjustable hood. It has however side or middle zipper to open and allow movement.",
+        "price": "120.99",
+        "stock": 8,
+        "available": true,
+        "created": "2017-12-10T12:01:11.238Z",
+        "updated": "2017-12-10T12:01:11.238Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 13,
+    "fields": {
+        "category": 6,
+        "name": "Double sleeping bags",
+        "slug": "double-sleeping-bags",
+        "image": "products/2017/12/10/double-sleeping-bag.jpg",
+        "description": "These are wider and made for more than one person. Filler is usually high quality cotton and liner is made from flannel making it very comfortable. Very roomy for 2 people.",
+        "price": "79.99",
+        "stock": 16,
+        "available": true,
+        "created": "2017-12-10T12:03:41.439Z",
+        "updated": "2017-12-10T12:03:41.439Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 14,
+    "fields": {
+        "category": 6,
+        "name": "Body shaped bags",
+        "slug": "body-shaped-bags",
+        "image": "products/2017/12/10/bodyshaped.jpg",
+        "description": "Looks like a space suit. It is very cosy and practical. It allows for normal movements and can walk and sleep easily.",
+        "price": "115.00",
+        "stock": 7,
+        "available": true,
+        "created": "2017-12-10T12:05:55.193Z",
+        "updated": "2017-12-10T12:05:55.193Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 15,
+    "fields": {
+        "category": 7,
+        "name": "foam rolled mats",
+        "slug": "foam-rolled-mats",
+        "image": "products/2017/12/10/sleeping-pad-foam.jpg",
+        "description": "Most common mats available. They are large rectangular pieces of closed cell form. Normally use as a base for sleep with or without sleeping bags. They are affordable, tough, reliable and easy to roll up. However, they are massive to carry around usually strapped outside the rucksack.",
+        "price": "16.99",
+        "stock": 23,
+        "available": true,
+        "created": "2017-12-10T12:20:22.936Z",
+        "updated": "2017-12-10T12:20:22.936Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 16,
+    "fields": {
+        "category": 7,
+        "name": "Self inflated mats",
+        "slug": "self-inflated-mats",
+        "image": "products/2017/12/10/self-inflating.jpg",
+        "description": "most common alternative to foam mats. They have a tough nylon outer material and open cell foam inside. This can be inflated easily. It is general warmer and more comfortable.",
+        "price": "37.99",
+        "stock": 11,
+        "available": true,
+        "created": "2017-12-10T12:22:46.122Z",
+        "updated": "2017-12-10T12:22:46.122Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 17,
+    "fields": {
+        "category": 8,
+        "name": "complete cookingset",
+        "slug": "complete-cookingset",
+        "image": "products/2017/12/10/completecookingset.jpg",
+        "description": "Versatile for group camping and allows people to prepare own food. Large groups will need more set up. This is complete with cooking set, cutlery, stove, kettle and frying pan. It also includes a couple of plates.",
+        "price": "22.99",
+        "stock": 33,
+        "available": true,
+        "created": "2017-12-10T12:52:04.014Z",
+        "updated": "2017-12-10T12:52:04.014Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 18,
+    "fields": {
+        "category": 8,
+        "name": "folding table",
+        "slug": "folding-table",
+        "image": "products/2017/12/10/foldingtable.jpg",
+        "description": "A simple and easy to use table. can be use as a platform for cooking and have everyone sit on mats.",
+        "price": "12.99",
+        "stock": 9,
+        "available": true,
+        "created": "2017-12-10T12:54:08.666Z",
+        "updated": "2017-12-10T12:54:08.666Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 19,
+    "fields": {
+        "category": 8,
+        "name": "Kitchen set",
+        "slug": "kitchen-set",
+        "image": "products/2017/12/10/kitchenset.jpg",
+        "description": "Kitchen in the wild. It has all the basics of a daily kitchen requirements. It is compact, lightweight and easy to set up and take down. It has removable pantries and has dual lantern hanging hooks.",
+        "price": "45.99",
+        "stock": 14,
+        "available": true,
+        "created": "2017-12-10T12:57:19.705Z",
+        "updated": "2017-12-10T12:57:19.705Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 20,
+    "fields": {
+        "category": 8,
+        "name": "plates sets",
+        "slug": "plates-sets",
+        "image": "products/2017/12/10/plateset.jpg",
+        "description": "Simple enamel camping tableware set.",
+        "price": "5.99",
+        "stock": 25,
+        "available": true,
+        "created": "2017-12-10T12:58:38.204Z",
+        "updated": "2017-12-10T12:58:38.204Z"
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+        "first_name": "Mutsa",
+        "last_name": "Kadungure",
+        "email": "mutsa1kad@hotmail.com",
+        "address": "55 POOLE STREET",
+        "postal_code": "NN1 3EX",
+        "city": "NORTHAMPTON",
+        "created": "2017-12-10T19:10:28.590Z",
+        "updated": "2017-12-13T00:31:00.114Z",
+        "paid": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 2,
+    "fields": {
+        "first_name": "Mutsa",
+        "last_name": "Kadungure",
+        "email": "mutsa1kad@hotmail.com",
+        "address": "55 POOLE STREET",
+        "postal_code": "NN1 3EX",
+        "city": "NORTHAMPTON",
+        "created": "2017-12-10T19:17:20.395Z",
+        "updated": "2017-12-10T19:17:20.395Z",
+        "paid": false
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product": 20,
+        "price": "5.99",
+        "quantity": 1
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "product": 4,
+        "price": "169.99",
+        "quantity": 1
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "product": 20,
+        "price": "5.99",
+        "quantity": 1
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 4,
+    "fields": {
+        "order": 2,
+        "product": 4,
+        "price": "169.99",
+        "quantity": 1
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-12-10T00:47:26.701Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Group_tents_Dome",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-12-10T00:48:07.078Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Group_tents_ridge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-12-10T00:50:34.342Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Bell_tents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-12-10T01:01:38.185Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "4",
+        "object_repr": "pyramids_tents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-12-10T01:09:14.884Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Flexible_pole",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-12-10T01:21:01.970Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Flexible_pole",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"category\", \"price\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2017-12-10T01:29:32.813Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Coleman Dome_tents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2017-12-10T01:36:22.359Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "Trail_head",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2017-12-10T01:44:36.239Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Dome_tents",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2017-12-10T01:45:06.220Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Ridge_tents",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2017-12-10T08:42:07.974Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Bell_tents",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2017-12-10T08:42:33.805Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Dome_tents",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2017-12-10T08:42:40.229Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Ridge_tents",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2017-12-10T08:42:47.563Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "4",
+        "object_repr": "pyramids_tents",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2017-12-10T08:42:58.477Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "5",
+        "object_repr": "Tents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2017-12-10T08:43:13.293Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "6",
+        "object_repr": "Sleeping bags",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2017-12-10T08:43:33.664Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "7",
+        "object_repr": "Sleeping Mats",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2017-12-10T08:44:31.166Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "8",
+        "object_repr": "Kitchen",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2017-12-10T09:15:06.565Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "4 Meter deluxe Bell tents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2017-12-10T09:25:23.262Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "Open Dome",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2017-12-10T09:29:17.985Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "Trailhead dome_tent",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2017-12-10T09:35:09.219Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "pyramids_tents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2017-12-10T09:42:49.096Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "8",
+        "object_repr": "Heavy duty Pyramid tent",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2017-12-10T09:49:56.429Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "9",
+        "object_repr": "Classic ridge tent",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2017-12-10T09:56:36.157Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "10",
+        "object_repr": "Force ten ridge tent",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2017-12-10T11:51:44.492Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "11",
+        "object_repr": "rectangular sleeping bags",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2017-12-10T12:01:11.243Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "12",
+        "object_repr": "Mummy Sleeping Bag",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2017-12-10T12:03:41.456Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "13",
+        "object_repr": "Double sleeping bags",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2017-12-10T12:05:55.198Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "14",
+        "object_repr": "Body shaped bags",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2017-12-10T12:20:22.942Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "15",
+        "object_repr": "foam rolled mats",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2017-12-10T12:22:46.128Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "16",
+        "object_repr": "Self inflated mats",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2017-12-10T12:52:04.022Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "17",
+        "object_repr": "complete cookingset",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2017-12-10T12:54:08.672Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "18",
+        "object_repr": "folding table",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2017-12-10T12:57:19.710Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "19",
+        "object_repr": "Kitchen set",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2017-12-10T12:58:38.211Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "20",
+        "object_repr": "plates sets",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2017-12-13T00:31:00.122Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "Order 1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"paid\"]}}]"
+    }
+}
+]
