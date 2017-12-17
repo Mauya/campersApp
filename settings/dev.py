@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from .base import *
+import debug_toolbar
 
 DEBUG = True
 
-INSTALLED_APPS.append('debug_toolbar')
+INSTALLED_APPS += 'debug_toolbar'
 
 MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
